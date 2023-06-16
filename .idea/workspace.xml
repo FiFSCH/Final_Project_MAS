@@ -4,22 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60910360-f446-4d52-a39d-60b3ec6c1f00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/ChildStage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/FantasyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/ScientificField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/TargetAudience.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/TutorialType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/Warnings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person/PersonType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utilities/ObjectPlus.java" afterDir="false" />
+    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final_Project_MAS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Book/FantasyBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Book/ScientificBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Book/TutorialBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookEdition/AudioBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookEdition/BookEdition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookEdition/EBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookEdition/FileFormatAudio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookEdition/FileFormatEbook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookEdition/ISBN13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookEdition/PaperBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +32,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2RImFqeCo8D7mf3EcZnHNRh4dIf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,6 +49,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -53,19 +60,43 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Final_Project_MAS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="60910360-f446-4d52-a39d-60b3ec6c1f00" name="Changes" comment="" />
-      <created>1686935776673</created>
+      <changelist id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="" />
+      <created>1686945870643</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1686935776673</updated>
-      <workItem from="1686935779617" duration="2783000" />
+      <updated>1686945870643</updated>
+      <workItem from="1686945885501" duration="8510000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/BookEdition/ISBN13.java</url>
+          <line>99</line>
+          <properties class="BookEdition.ISBN13" method="setCheckSum">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

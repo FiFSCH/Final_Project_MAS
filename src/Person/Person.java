@@ -3,11 +3,12 @@ package Person;
 import Utilities.ObjectPlus;
 import Book.Book;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
-public class Person extends ObjectPlus {
+public class Person extends ObjectPlus  implements Serializable {
 
         private String firstName, lastname, email;
         private LocalDate dateOfBirth;
@@ -30,7 +31,7 @@ public class Person extends ObjectPlus {
             setPersonTypes(personTypes);
 
             if (personTypes.contains(PersonType.AUTHOR)) {
-                books = new HashSet<Book>();
+                books = new HashSet<>();
                 setPseudonym(pseudonym);
             }
 
@@ -56,7 +57,7 @@ public class Person extends ObjectPlus {
                 throw new RuntimeException("This person is already an author!");
             this.personTypes.add(PersonType.AUTHOR);
             this.personTypes.remove(PersonType.CLIENT);
-            books = new HashSet<Book>();
+            books = new HashSet<>();
             this.memberFrom = null;
             this.memberTo = null;
             setPseudonym(pseudonym);
