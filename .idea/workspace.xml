@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final_Project_MAS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/FantasyBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/ScientificBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Book/TutorialBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookEdition/AudioBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookEdition/BookEdition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookEdition/EBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookEdition/FileFormatAudio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookEdition/FileFormatEbook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookEdition/ISBN13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookEdition/PaperBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="country_codes file">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rent/BookCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rent/Rent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utilities/SharedObjectException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/BookEdition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookEdition/BookEdition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities/ObjectPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/ObjectPlus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,26 +70,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686945870643</updated>
-      <workItem from="1686945885501" duration="8510000" />
+      <workItem from="1686945885501" duration="8855000" />
+      <workItem from="1686998845144" duration="6368000" />
     </task>
+    <task id="LOCAL-00001" summary="added some more associations + unique ISBN constraint">
+      <created>1686954866086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686954866086</updated>
+    </task>
+    <task id="LOCAL-00002" summary="country_codes file">
+      <created>1686954935011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686954935011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/BookEdition/ISBN13.java</url>
-          <line>99</line>
-          <properties class="BookEdition.ISBN13" method="setCheckSum">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added some more associations + unique ISBN constraint" />
+    <MESSAGE value="country_codes file" />
+    <option name="LAST_COMMIT_MESSAGE" value="country_codes file" />
   </component>
 </project>

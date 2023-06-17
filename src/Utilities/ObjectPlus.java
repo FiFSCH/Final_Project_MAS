@@ -15,7 +15,7 @@ public class ObjectPlus implements Serializable {
         if (allExtents.containsKey(CLASS))
             extent = allExtents.get(CLASS);
         else {
-            extent = new ArrayList();
+            extent = new ArrayList<>();
             allExtents.put(CLASS, extent);
         }
         extent.add(this);

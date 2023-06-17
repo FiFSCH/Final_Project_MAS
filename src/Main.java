@@ -3,6 +3,8 @@ import BookEdition.ISBN13;
 import Person.*;
 import Book.*;
 import BookEdition.*;
+import Rent.*;
+import Utilities.ObjectPlus;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -22,9 +24,24 @@ public class Main {
         System.out.println(book);
         //UNIQUE ISBN CHECK
         ISBN13 isbn13 = new ISBN13(83, "8129", "243");
-        BookEdition edition = new EBook(LocalDate.now(),isbn13,"PL",FileFormatEbook.EPUB);
+        BookEdition edition = new EBook(LocalDate.now(), isbn13, "PL", FileFormatEbook.EPUB);
         System.out.println(edition);
-        BookEdition edition2 = new EBook(LocalDate.now(),isbn13,"ENG",FileFormatEbook.EPUB);
-        System.out.println(edition2);
+        //Composition check
+        BookCopy bc = BookCopy.createBookCopy(edition, 15);
+        System.out.println(bc);
+        //System.out.println(edition);
+        System.out.println(ObjectPlus.getExtent(edition.getClass()));
+        Rent rent = test.rentBook(bc, LocalDate.now());
+        System.out.println("===================================================================");
+        Rent rent2 = new Rent(LocalDate.now(),bc,test);
+        bc.removeRentedBy(rent2);
+        System.out.println(rent2);
+        test.removeRentedBook(rent);
+        System.out.println(test);
+        System.out.println(rent);
+        System.out.println(bc);
+        System.out.println("/////////////////////////////////////////////////");
+        book.addEdition(edition);
+
     }
 }

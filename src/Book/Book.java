@@ -1,5 +1,6 @@
 package Book;
 
+import BookEdition.BookEdition;
 import Utilities.ObjectPlus;
 import Person.*;
 
@@ -119,9 +120,35 @@ public abstract class Book extends ObjectPlus implements Serializable {
     }
     //endregion
 
+    //region edition
+    private Set<BookEdition> editions = new HashSet<>();
+
+    public Set<BookEdition> getEdition() {
+        return Collections.unmodifiableSet(editions);
+    }
+
+    public void addEdition(BookEdition edition) throws IllegalAccessException {
+        if (edition == null)
+            throw new IllegalAccessException("Empty edition!");
+        if (editions.contains(edition))
+            return;
+        editions.add(edition);
+        edition.setBook(this);
+    }
+
+    public void removeEdition(BookEdition edition) throws IllegalAccessException {
+        if (edition == null)
+            throw new IllegalAccessException("Empty edition!");
+        if (!editions.contains(edition))
+            return;
+        editions.remove(edition);
+        edition.removeBook(null);
+    }
+
+
     @Override
     public String toString() {
-        String toString =  "Book{" +
+        String toString = "Book{" +
                 "title='" + title + '\'' +
                 ", targetAudience=" + targetAudience +
                 ", childStage=" + childStage +
@@ -131,10 +158,13 @@ public abstract class Book extends ObjectPlus implements Serializable {
         try {
             for (Person author : authors)
                 toString += " " + author.getFirstName() + " " + author.getLastname() + (author.getPseudonym() == null || author.getPseudonym().isBlank() ? "" : author.getPseudonym());
-        } catch (IllegalAccessException e){
+        } catch (IllegalAccessException e) {
             e.printStackTrace();
             System.exit(-1);
         }
+        toString += " , editions=";
+        for (BookEdition edition : editions)
+            toString += " " + edition.getIsbn13();
         return toString + '}';
     }
 }
