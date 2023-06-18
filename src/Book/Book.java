@@ -144,7 +144,7 @@ public abstract class Book extends ObjectPlus implements Serializable {
         editions.remove(edition);
         edition.removeBook(null);
     }
-
+//endregion
 
     @Override
     public String toString() {
@@ -164,7 +164,7 @@ public abstract class Book extends ObjectPlus implements Serializable {
         }
         toString += " , editions=";
         for (BookEdition edition : editions)
-            toString += " " + edition.getIsbn13();
+            toString += " " + edition.getIsbn13() + ", ";
         return toString + '}';
     }
 }

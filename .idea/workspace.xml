@@ -4,17 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="country_codes file">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rent/BookCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Rent/Rent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utilities/SharedObjectException.java" afterDir="false" />
+    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="more associations">
+      <change afterPath="$PROJECT_DIR$/Extents.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientsWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/ClientsListCellRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BookEdition/BookEdition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookEdition/BookEdition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utilities/ObjectPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/ObjectPlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rent/BookCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rent/BookCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rent/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rent/Rent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +40,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="45f01ea5-dc47-40c2-8155-72cbc4140955" />
+        <option name="url" value="https://github.com/FiFSCH/Final_Project_MAS.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectId" id="2RImFqeCo8D7mf3EcZnHNRh4dIf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,9 +63,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "394",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/fifik/OneDrive/Pulpit/MAS_Dokumentacja/guiMockupMAS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,7 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1686945870643</updated>
       <workItem from="1686945885501" duration="8855000" />
-      <workItem from="1686998845144" duration="6368000" />
+      <workItem from="1686998845144" duration="8487000" />
+      <workItem from="1687100398165" duration="14124000" />
     </task>
     <task id="LOCAL-00001" summary="added some more associations + unique ISBN constraint">
       <created>1686954866086</created>
@@ -87,15 +111,34 @@
       <option name="project" value="LOCAL" />
       <updated>1686954935011</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="more associations">
+      <created>1687013008659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687013008659</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added some more associations + unique ISBN constraint" />
     <MESSAGE value="country_codes file" />
-    <option name="LAST_COMMIT_MESSAGE" value="country_codes file" />
+    <MESSAGE value="more associations" />
+    <option name="LAST_COMMIT_MESSAGE" value="more associations" />
   </component>
 </project>

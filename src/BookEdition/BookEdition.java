@@ -11,7 +11,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public abstract class BookEdition extends ObjectPlus implements Serializable {
-    //TODO Association with book
     private static Set<BookCopy> allBookCopies = new HashSet<>();
     private Set<BookCopy> bookCopies = new HashSet<>();
     private LocalDate dateOfPublishing;

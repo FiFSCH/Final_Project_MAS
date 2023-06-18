@@ -4,12 +4,13 @@ import BookEdition.*;
 import Utilities.*;
 import Person.Person;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class BookCopy {
+public class BookCopy implements Serializable {
     private double price;
     private BookEdition bookEdition;
 

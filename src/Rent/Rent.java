@@ -2,10 +2,11 @@ package Rent;
 
 import Person.Person;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Comparator;
 
-public class Rent {
+public class Rent implements Serializable {
     LocalDate dateStart, dateEnd;
     private BookCopy bookCopy;
     private Person client;
@@ -40,8 +41,6 @@ public class Rent {
     private void setDateStart(LocalDate dateStart) {
         if (dateStart == null)
             throw new IllegalArgumentException("Empty date!");
-        if (dateStart.isBefore(LocalDate.now()))
-            throw new IllegalArgumentException("Date from the past!");
         if (this.bookCopy.getRentedBy().size() != 0) {
             //If this book is already rented then the start date is automatically assigned based on the end date of the current rent
             LocalDate startDate = this.bookCopy.getRentedBy().stream().max(Comparator.comparing(date -> date.getDateEnd())).get().dateEnd;

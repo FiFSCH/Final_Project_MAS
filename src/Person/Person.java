@@ -16,7 +16,7 @@ public class Person extends ObjectPlus implements Serializable {
     private EnumSet<PersonType> personTypes;
 
     //author
-    private Set<Book> books;
+    private Set<Book> books = new HashSet<Book>();
     private String pseudonym;
 
     //client
@@ -118,7 +118,11 @@ public class Person extends ObjectPlus implements Serializable {
     }
 
     public void setEmail(String email) {
-        if (email == null || email.isBlank())
+        if(email == null){
+            this.email = null;
+            return;
+        }
+        if (email.isBlank())
             throw new IllegalArgumentException("Empty email!");
         if (!email.matches("\\S+@\\S+\\.\\S+")) //Match any non-whitespace character once or more times, @, any non-whitespace character once or more times, . (dot), any non-whitespace character once or more times
             throw new IllegalArgumentException("Wrong email format!");
