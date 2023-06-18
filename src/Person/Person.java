@@ -16,7 +16,7 @@ public class Person extends ObjectPlus implements Serializable {
     private EnumSet<PersonType> personTypes;
 
     //author
-    private Set<Book> books = new HashSet<Book>();
+    private Set<Book> books = new HashSet<>();
     private String pseudonym;
 
     //client
@@ -256,9 +256,9 @@ public class Person extends ObjectPlus implements Serializable {
         return Period.between(this.getDateOfBirth(), LocalDate.now()).getYears();
     }
 
-    public LocalDate getMemberFrom() throws IllegalAccessException {
+    public LocalDate getMemberFrom(){
         if (!personTypes.contains(PersonType.CLIENT))
-            throw new IllegalAccessException("This person is not a client!");
+            throw new IllegalArgumentException("This person is not a client!");
         return memberFrom;
     }
 

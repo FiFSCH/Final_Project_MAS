@@ -1,6 +1,5 @@
 package GUI.Controller;
 
-import GUI.View.ClientDetailsWindow;
 import GUI.View.ClientsListWindow;
 import Person.*;
 import Utilities.ObjectPlus;
@@ -39,7 +38,8 @@ public class ClientsWindowController {
     private void selectHandler(){
         clientsListWindow.getClientsList().addListSelectionListener(list ->{
             if(!list.getValueIsAdjusting()){
-                mainController.displayClientDetails();
+                Person selectedClient = (Person) clientsListWindow.getClientsList().getSelectedValue();
+                mainController.displayClientDetails(selectedClient);
             }
         });
     }

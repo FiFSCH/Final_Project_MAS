@@ -1,8 +1,8 @@
 package GUI.Controller;
 
 import GUI.View.MainWindow;
+import Person.Person;
 
-import javax.swing.*;
 
 public class MainController{
     private MainWindow mainWindowView;
@@ -21,7 +21,7 @@ public class MainController{
 
     public void menuItemHandler() {
         mainWindowView.getMenuItem().addActionListener(action -> {
-           //TODO: make it go back to the customers list if we are in some other window
+           //TODO: make it go back to the customers list if we are in some other window (or other strange behaviour)
            displayClients();
         });
     }
@@ -31,8 +31,9 @@ public class MainController{
         mainWindowView.getContentPane().add(clientsWindowController.getListOfClientsWindow().getClientsPanel());
         mainWindowView.revalidate();
     }
-    public void displayClientDetails(){
+    public void displayClientDetails(Person client) {
         mainWindowView.getContentPane().removeAll();
+        clientDetailsWindowController.clientDetails(client);
         mainWindowView.getContentPane().add(clientDetailsWindowController.getClientDetailsWindow().getClientRentsPanel());
         mainWindowView.revalidate();
     }
