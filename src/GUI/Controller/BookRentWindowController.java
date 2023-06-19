@@ -33,7 +33,8 @@ public class BookRentWindowController {
     }
 
     public void getBookAndRentDetails(Rent rent) {
-        if(rent == null)
+        bookRentDetailsWindow.getCancelReservationButton().setEnabled(true);
+        if (rent == null)
             return;
         edition = rent.getBookCopy().getBookEdition();
         book = edition.getBook();
@@ -45,7 +46,7 @@ public class BookRentWindowController {
         DefaultListModel<Person> defaultListModel = (DefaultListModel<Person>) bookRentDetailsWindow.getAuthorsList().getModel();
         defaultListModel.removeAllElements();
         defaultListModel.addAll(authors);
-        if(rent.getDateStart().isAfter(LocalDate.now()) || rent.getDateStart().isEqual(LocalDate.now()))
+        if (rent.getDateStart().isAfter(LocalDate.now()) || rent.getDateStart().isEqual(LocalDate.now()))
             bookRentDetailsWindow.getCancelReservationButton().setEnabled(false);
     }
 }

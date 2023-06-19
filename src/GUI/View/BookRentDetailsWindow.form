@@ -123,16 +123,23 @@
                   <text value="Cancel reservation"/>
                 </properties>
               </component>
-              <component id="bb797" class="javax.swing.JList" binding="AuthorsList" custom-create="true">
+              <scrollpane id="c0468">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="50"/>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="30"/>
                   </grid>
                 </constraints>
-                <properties>
-                  <enabled value="false"/>
-                </properties>
-              </component>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="bb797" class="javax.swing.JList" binding="AuthorsList" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <enabled value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
             </children>
           </grid>
         </children>

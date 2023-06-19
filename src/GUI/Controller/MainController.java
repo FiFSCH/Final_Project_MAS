@@ -23,12 +23,11 @@ public class MainController{
     }
 
     public void menuItemHandler() {
-        mainWindowView.getMenuItem().addActionListener(action -> {
-           displayClients();
-        });
+        mainWindowView.getMenuItem().addActionListener(action -> displayClients());
     }
 
     public void displayClients(){
+        clientsWindowController.getListOfClientsWindow().getClientsList().clearSelection();
         mainWindowView.getContentPane().removeAll();
         mainWindowView.getContentPane().add(clientsWindowController.getListOfClientsWindow().getClientsPanel());
         mainWindowView.revalidate();

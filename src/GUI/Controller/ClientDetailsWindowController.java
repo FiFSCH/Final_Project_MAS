@@ -33,6 +33,8 @@ public class ClientDetailsWindowController {
         return clientDetailsWindow;
     }
     public void clientDetails(Person client){
+        if(client == null)
+            return;
         getRents(client);
         DefaultListModel<Rent> defaultListModel = (DefaultListModel<Rent>) clientDetailsWindow.getRentsList().getModel();
         defaultListModel.removeAllElements();

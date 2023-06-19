@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="Added book and rent details view (not data yet)">
-      <change afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/AuthorsListCellRenderer.java" afterDir="false" />
+    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="fixed selection problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Extents.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Controller/BookRentWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/BookRentWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +85,7 @@
       <workItem from="1686998845144" duration="8487000" />
       <workItem from="1687100398165" duration="15814000" />
       <workItem from="1687185162882" duration="8816000" />
-      <workItem from="1687206268934" duration="3646000" />
+      <workItem from="1687206268934" duration="5184000" />
     </task>
     <task id="LOCAL-00001" summary="added some more associations + unique ISBN constraint">
       <created>1686954866086</created>
@@ -140,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687197773655</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="GUI more or less done">
+      <created>1687209995197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687209995197</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +168,8 @@
     <MESSAGE value="customer details display data (no list yet)" />
     <MESSAGE value="Fixed clients list problem" />
     <MESSAGE value="Added book and rent details view (not data yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added book and rent details view (not data yet)" />
+    <MESSAGE value="GUI more or less done" />
+    <MESSAGE value="fixed selection problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed selection problem" />
   </component>
 </project>
