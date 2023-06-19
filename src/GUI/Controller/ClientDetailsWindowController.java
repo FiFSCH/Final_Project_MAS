@@ -16,7 +16,7 @@ public class ClientDetailsWindowController {
     public ClientDetailsWindowController(MainController mainController) {
         this.mainController = mainController;
         this.clientDetailsWindow = new ClientDetailsWindow();
-        clientDetailsWindow.getRentsList().setModel(new DefaultListModel<Rent>());
+        this.clientDetailsWindow.getRentsList().setModel(new DefaultListModel<Rent>());
         selectHandler();
     }
 

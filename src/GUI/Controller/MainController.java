@@ -42,8 +42,8 @@ public class MainController{
         mainWindowView.getContentPane().repaint();
     }
     public void displayBookRentDetails(Rent rent){
+        bookRentWindowController.getBookAndRentDetails(rent);
         mainWindowView.getContentPane().removeAll();
-        //TODO get details (rent and book)
         mainWindowView.getContentPane().add(bookRentWindowController.getBookRentDetailsWindow().getMainPanel());
         mainWindowView.revalidate();
         mainWindowView.getContentPane().repaint();

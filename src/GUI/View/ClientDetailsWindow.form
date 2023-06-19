@@ -18,7 +18,7 @@
           <splitpane id="1a0ee">
             <constraints/>
             <properties>
-              <dividerLocation value="240"/>
+              <dividerLocation value="200"/>
             </properties>
             <border type="none"/>
             <children>
@@ -54,7 +54,9 @@
                       </grid>
                     </constraints>
                     <properties>
+                      <disabledTextColor color="-16777216"/>
                       <enabled value="false"/>
+                      <foreground color="-16777216"/>
                       <text value=""/>
                     </properties>
                   </component>
@@ -74,7 +76,9 @@
                       </grid>
                     </constraints>
                     <properties>
+                      <disabledTextColor color="-16777216"/>
                       <enabled value="false"/>
+                      <foreground color="-16777216"/>
                       <text value=""/>
                     </properties>
                   </component>
@@ -94,7 +98,9 @@
                       </grid>
                     </constraints>
                     <properties>
+                      <disabledTextColor color="-16777216"/>
                       <enabled value="false"/>
+                      <foreground color="-16777216"/>
                     </properties>
                   </component>
                 </children>
