@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="customer details display data (no list yet)">
-      <change afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/RentsListCellRenderer.java" afterDir="false" />
+    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="Fixed clients list problem">
+      <change afterPath="$PROJECT_DIR$/src/GUI/Controller/BookRentWindowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Extents.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Controller/ClientsWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientsWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientsListCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/ClientsListCellRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +85,7 @@
       <workItem from="1686945885501" duration="8855000" />
       <workItem from="1686998845144" duration="8487000" />
       <workItem from="1687100398165" duration="15814000" />
-      <workItem from="1687185162882" duration="6109000" />
+      <workItem from="1687185162882" duration="8208000" />
     </task>
     <task id="LOCAL-00001" summary="added some more associations + unique ISBN constraint">
       <created>1686954866086</created>
@@ -128,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687123728376</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed clients list problem">
+      <created>1687195453041</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687195453041</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +152,7 @@
     <MESSAGE value="more associations" />
     <MESSAGE value="customer list + empty details window" />
     <MESSAGE value="customer details display data (no list yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer details display data (no list yet)" />
+    <MESSAGE value="Fixed clients list problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed clients list problem" />
   </component>
 </project>

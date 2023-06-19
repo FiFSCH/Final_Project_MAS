@@ -11,10 +11,22 @@ import java.util.Set;
 public class ClientDetailsWindowController {
     private ClientDetailsWindow clientDetailsWindow;
     private Set<Rent> rents;
+    private MainController mainController;
 
-    public ClientDetailsWindowController() {
+    public ClientDetailsWindowController(MainController mainController) {
+        this.mainController = mainController;
         this.clientDetailsWindow = new ClientDetailsWindow();
         clientDetailsWindow.getRentsList().setModel(new DefaultListModel<Rent>());
+        selectHandler();
+    }
+
+    private void selectHandler(){
+        clientDetailsWindow.getRentsList().addListSelectionListener(list ->{
+            if(!list.getValueIsAdjusting()){
+                Rent rent = (Rent) clientDetailsWindow.getRentsList().getSelectedValue();
+                mainController.displayBookRentDetails(rent);
+            }
+        });
     }
 
     public ClientDetailsWindow getClientDetailsWindow() {
@@ -25,7 +37,6 @@ public class ClientDetailsWindowController {
         DefaultListModel<Rent> defaultListModel = (DefaultListModel<Rent>) clientDetailsWindow.getRentsList().getModel();
         defaultListModel.removeAllElements();
         defaultListModel.addAll(rents);
-        System.out.println(client);
         clientDetailsWindow.getDobField().setText(client.getDateOfBirth().toString());
         clientDetailsWindow.getNameField().setText(client.getFirstName() + " " + client.getLastname());
         clientDetailsWindow.getMembSinceField().setText(client.getMemberFrom().toString());

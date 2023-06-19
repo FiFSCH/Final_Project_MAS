@@ -2,17 +2,20 @@ package GUI.Controller;
 
 import GUI.View.MainWindow;
 import Person.Person;
-
+import Rent.Rent;
 
 public class MainController{
     private MainWindow mainWindowView;
     private ClientsWindowController clientsWindowController;
-    private ClientDetailsWindowController clientDetailsWindowController = new ClientDetailsWindowController();
+    private ClientDetailsWindowController clientDetailsWindowController;
+    private BookRentWindowController bookRentWindowController;
 
     public MainController() throws ClassNotFoundException {
         this.mainWindowView = new MainWindow();
         menuItemHandler();
-        clientsWindowController = new ClientsWindowController(this);
+        this.clientsWindowController = new ClientsWindowController(this);
+        this.clientDetailsWindowController = new ClientDetailsWindowController(this);
+        this.bookRentWindowController = new BookRentWindowController(this);
     }
 
     public void displayGUI() {
@@ -32,9 +35,16 @@ public class MainController{
         mainWindowView.getContentPane().repaint();
     }
     public void displayClientDetails(Person client) {
-        mainWindowView.getContentPane().removeAll();
         clientDetailsWindowController.clientDetails(client);
+        mainWindowView.getContentPane().removeAll();
         mainWindowView.getContentPane().add(clientDetailsWindowController.getClientDetailsWindow().getClientRentsPanel());
+        mainWindowView.revalidate();
+        mainWindowView.getContentPane().repaint();
+    }
+    public void displayBookRentDetails(Rent rent){
+        mainWindowView.getContentPane().removeAll();
+        //TODO get details (rent and book)
+        mainWindowView.getContentPane().add(bookRentWindowController.getBookRentDetailsWindow().getMainPanel());
         mainWindowView.revalidate();
         mainWindowView.getContentPane().repaint();
     }
