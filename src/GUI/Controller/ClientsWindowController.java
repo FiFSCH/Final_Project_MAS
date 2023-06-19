@@ -19,7 +19,6 @@ public class ClientsWindowController {
         clientsListWindow.getClientsList().setModel(new DefaultListModel<Person>());
         displayClients();
         selectHandler();
-
     }
     private void getClients() throws ClassNotFoundException {
         clients = new ArrayList<>();

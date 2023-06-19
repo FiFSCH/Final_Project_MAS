@@ -58,7 +58,7 @@ public class Main {
 //        Rent rent5 = new Rent(LocalDate.of(2023, Month.NOVEMBER, 9), rokPaper2, client3);
 //        Rent rent6 = new Rent(LocalDate.of(2023, Month.JULY, 25), metroEbook, client3);
         SwingUtilities.invokeLater(() -> {
-            MainController mainController = null;
+            MainController mainController;
             try {
                 mainController = new MainController();
             } catch (ClassNotFoundException e) {

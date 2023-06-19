@@ -2,6 +2,9 @@ package GUI.View;
 
 import javax.swing.*;
 
+import GUI.View.ListCellRenderers.RentsListCellRenderer;
+import Rent.Rent;
+
 public class ClientDetailsWindow {
     private JPanel clientRents;
     private JList Rents;
@@ -32,5 +35,10 @@ public class ClientDetailsWindow {
 
     public JTextField getMembSinceField() {
         return membSinceField;
+    }
+
+    private void createUIComponents() {
+        Rents = new JList<Rent>();
+        Rents.setCellRenderer(new RentsListCellRenderer());
     }
 }

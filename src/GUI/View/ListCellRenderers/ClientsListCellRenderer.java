@@ -1,4 +1,4 @@
-package GUI.View;
+package GUI.View.ListCellRenderers;
 
 import Person.Person;
 

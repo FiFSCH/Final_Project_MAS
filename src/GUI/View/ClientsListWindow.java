@@ -1,5 +1,8 @@
 package GUI.View;
 
+import GUI.View.ListCellRenderers.ClientsListCellRenderer;
+import Person.Person;
+
 import javax.swing.*;
 
 public class ClientsListWindow {
@@ -15,7 +18,7 @@ public class ClientsListWindow {
     }
 
     private void createUIComponents() {
-        ClientsList = new JList();
+        ClientsList = new JList<Person>();
         ClientsList.setCellRenderer(new ClientsListCellRenderer());
     }
 }

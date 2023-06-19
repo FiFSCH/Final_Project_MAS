@@ -6,7 +6,7 @@ public class MainWindow extends JFrame {
     private JMenuItem menuItem;
     public MainWindow(){
         setTitle("Reservation management");
-        setSize(960, 480);
+        setSize(640, 400);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         JMenu jmenu = new JMenu("Options");
         JMenuBar menuBar = new JMenuBar();

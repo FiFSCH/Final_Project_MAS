@@ -195,9 +195,9 @@ public class Person extends ObjectPlus implements Serializable {
     //region client
     private Set<Rent> rentedBooks = new HashSet<>();
 
-    public Set<Rent> getRentedBooks() throws IllegalAccessException {
+    public Set<Rent> getRentedBooks(){
         if (!personTypes.contains(PersonType.CLIENT))
-            throw new IllegalAccessException("This person is not a client!");
+            throw new IllegalArgumentException("This person is not a client!");
         return Collections.unmodifiableSet(rentedBooks);
     }
 

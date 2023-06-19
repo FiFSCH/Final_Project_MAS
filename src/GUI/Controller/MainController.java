@@ -21,7 +21,6 @@ public class MainController{
 
     public void menuItemHandler() {
         mainWindowView.getMenuItem().addActionListener(action -> {
-           //TODO: make it go back to the customers list if we are in some other window (or other strange behaviour)
            displayClients();
         });
     }
@@ -30,17 +29,13 @@ public class MainController{
         mainWindowView.getContentPane().removeAll();
         mainWindowView.getContentPane().add(clientsWindowController.getListOfClientsWindow().getClientsPanel());
         mainWindowView.revalidate();
+        mainWindowView.getContentPane().repaint();
     }
     public void displayClientDetails(Person client) {
         mainWindowView.getContentPane().removeAll();
         clientDetailsWindowController.clientDetails(client);
         mainWindowView.getContentPane().add(clientDetailsWindowController.getClientDetailsWindow().getClientRentsPanel());
         mainWindowView.revalidate();
+        mainWindowView.getContentPane().repaint();
     }
-    //TODO: REMOVE LATER IF NEEDED
-//    public void displaysManager(JPanel display) {
-//        mainWindowView.getContentPane().removeAll();
-//        mainWindowView.getContentPane().add(display);
-//        mainWindowView.revalidate();
-//    }
 }
