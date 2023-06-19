@@ -1,8 +1,8 @@
 package GUI.Controller;
 
-import Person.Person;
+import Model.Person.Person;
 import GUI.View.ClientDetailsWindow;
-import Rent.Rent;
+import Model.Rent.Rent;
 
 import javax.swing.*;
 import java.util.HashSet;

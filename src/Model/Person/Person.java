@@ -1,8 +1,8 @@
-package Person;
+package Model.Person;
 
 import Utilities.ObjectPlus;
-import Book.Book;
-import Rent.*;
+import Model.Book.Book;
+import Model.Rent.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -88,7 +88,7 @@ public class Person extends ObjectPlus implements Serializable {
     }
     //endregion
 
-    //region Person getters and setters
+    //region Model.Person getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -283,7 +283,7 @@ public class Person extends ObjectPlus implements Serializable {
 
     @Override
     public String toString() {
-        String toString =  "Person{" +
+        String toString =  "Model.Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", email='" + email + '\'' +

@@ -1,4 +1,4 @@
-package Person;
+package Model.Person;
 
 public enum PersonType {
     CLIENT,

@@ -1,4 +1,4 @@
-package Book;
+package Model.Book;
 
 import java.util.EnumSet;
 

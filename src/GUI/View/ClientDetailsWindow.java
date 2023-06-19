@@ -3,7 +3,7 @@ package GUI.View;
 import javax.swing.*;
 
 import GUI.View.ListCellRenderers.RentsListCellRenderer;
-import Rent.Rent;
+import Model.Rent.Rent;
 
 public class ClientDetailsWindow {
     private JPanel clientRents;

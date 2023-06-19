@@ -1,7 +1,7 @@
 package GUI.Controller;
 
 import GUI.View.ClientsListWindow;
-import Person.*;
+import Model.Person.*;
 import Utilities.ObjectPlus;
 
 import javax.swing.*;

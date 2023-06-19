@@ -1,6 +1,6 @@
 package GUI.View.ListCellRenderers;
 
-import Person.Person;
+import Model.Person.Person;
 
 import javax.swing.*;
 import java.awt.*;

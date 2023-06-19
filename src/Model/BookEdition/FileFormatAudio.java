@@ -1,4 +1,4 @@
-package BookEdition;
+package Model.BookEdition;
 
 public enum FileFormatAudio {
     MP3,

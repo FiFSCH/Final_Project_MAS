@@ -1,6 +1,6 @@
 package GUI.View.ListCellRenderers;
 
-import Rent.Rent;
+import Model.Rent.Rent;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,8 +12,6 @@ public class RentsListCellRenderer extends JLabel implements ListCellRenderer<Re
         setOpaque(true);
         String bookTitle = value.getBookCopy().getBookEdition().getBook().getTitle();
         setText(bookTitle);
-        if(value.getDateStart().isAfter(LocalDate.now()) || value.getDateStart().isEqual(LocalDate.now()))
-            setForeground(Color.RED);
         if (isSelected) {
             setBackground(list.getSelectionBackground());
             setForeground(list.getSelectionForeground());
@@ -21,7 +19,7 @@ public class RentsListCellRenderer extends JLabel implements ListCellRenderer<Re
             setForeground(list.getForeground());
             setBackground(list.getBackground());
         }
-        if(value.getDateStart().isAfter(LocalDate.now()) || value.getDateStart().isEqual(LocalDate.now()))
+        if(value.getDateStart().isBefore(LocalDate.now()) || value.getDateStart().isEqual(LocalDate.now()))
             setForeground(Color.RED);
         return this;
     }

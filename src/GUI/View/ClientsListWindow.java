@@ -1,7 +1,7 @@
 package GUI.View;
 
 import GUI.View.ListCellRenderers.ClientsListCellRenderer;
-import Person.Person;
+import Model.Person.Person;
 
 import javax.swing.*;
 

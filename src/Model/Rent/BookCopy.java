@@ -1,8 +1,8 @@
-package Rent;
+package Model.Rent;
 
-import BookEdition.*;
+import Model.BookEdition.*;
 import Utilities.*;
-import Person.Person;
+import Model.Person.Person;
 
 import java.io.Serializable;
 import java.time.LocalDate;

@@ -1,8 +1,8 @@
 package GUI.Controller;
 
 import GUI.View.MainWindow;
-import Person.Person;
-import Rent.Rent;
+import Model.Person.Person;
+import Model.Rent.Rent;
 
 public class MainController{
     private MainWindow mainWindowView;

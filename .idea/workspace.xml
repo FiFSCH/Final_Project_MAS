@@ -4,13 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="fixed selection problem">
+    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="moved to packages and fixed the isAfter bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Extents.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/ChildStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/ChildStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/FantasyBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/FantasyBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/FantasyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/FantasyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/ScientificBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/ScientificBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/ScientificField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/ScientificField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/TargetAudience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/TargetAudience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/TutorialBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/TutorialBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/TutorialType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/TutorialType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/Warnings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/Warnings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/AudioBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/AudioBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/BookEdition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/BookEdition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/EBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/EBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/FileFormatAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/FileFormatAudio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/FileFormatEbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/FileFormatEbook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/ISBN13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/ISBN13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookEdition/PaperBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/PaperBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Controller/BookRentWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/BookRentWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Controller/ClientsWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientsWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/AuthorsListCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/AuthorsListCellRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/ClientsListCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/ClientsListCellRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/RentsListCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/RentsListCellRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person/PersonType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Person/PersonType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rent/BookCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Rent/BookCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rent/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Rent/Rent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +113,7 @@
       <workItem from="1686998845144" duration="8487000" />
       <workItem from="1687100398165" duration="15814000" />
       <workItem from="1687185162882" duration="8816000" />
-      <workItem from="1687206268934" duration="5184000" />
+      <workItem from="1687206268934" duration="7322000" />
     </task>
     <task id="LOCAL-00001" summary="added some more associations + unique ISBN constraint">
       <created>1686954866086</created>
@@ -143,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687209995197</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed selection problem">
+      <created>1687211686970</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687211686970</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +205,7 @@
     <MESSAGE value="Added book and rent details view (not data yet)" />
     <MESSAGE value="GUI more or less done" />
     <MESSAGE value="fixed selection problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed selection problem" />
+    <MESSAGE value="moved to packages and fixed the isAfter bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved to packages and fixed the isAfter bug" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package Book;
+package Model.Book;
 
 public enum TargetAudience {
     CHILD_BOOK,

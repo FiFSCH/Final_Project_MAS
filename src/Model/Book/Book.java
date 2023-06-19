@@ -1,8 +1,8 @@
-package Book;
+package Model.Book;
 
-import BookEdition.BookEdition;
+import Model.BookEdition.BookEdition;
 import Utilities.ObjectPlus;
-import Person.*;
+import Model.Person.*;
 
 import java.io.Serializable;
 import java.util.Collections;
@@ -15,10 +15,10 @@ public abstract class Book extends ObjectPlus implements Serializable {
     private TargetAudience targetAudience;
     private Set<Person> authors = new HashSet<>();
 
-    //Book for children
+    //Model.Book for children
     private ChildStage childStage;
     private Boolean isRequiredReading; //Boolean object because this attribute is optional.
-    //Book for adults
+    //Model.Book for adults
     private EnumSet<Warnings> warnings;
 
     public Book(String title, TargetAudience targetAudience, ChildStage childStage, Boolean isRequiredReading, EnumSet<Warnings> warnings) throws IllegalAccessException {
@@ -148,7 +148,7 @@ public abstract class Book extends ObjectPlus implements Serializable {
 
     @Override
     public String toString() {
-        String toString = "Book{" +
+        String toString = "Model.Book{" +
                 "title='" + title + '\'' +
                 ", targetAudience=" + targetAudience +
                 ", childStage=" + childStage +

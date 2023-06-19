@@ -1,6 +1,6 @@
-package Rent;
+package Model.Rent;
 
-import Person.Person;
+import Model.Person.Person;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -81,7 +81,7 @@ public class Rent implements Serializable {
 
     @Override
     public String toString() {
-        return "Rent{" +
+        return "Model.Rent{" +
                 "dateStart=" + dateStart +
                 ", dateEnd=" + dateEnd +
                 ", bookCopy=" + (bookCopy != null ? bookCopy : null) +

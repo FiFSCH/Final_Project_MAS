@@ -1,4 +1,4 @@
-package BookEdition;
+package Model.BookEdition;
 
 import Utilities.ObjectPlus;
 

@@ -1,8 +1,8 @@
-package BookEdition;
+package Model.BookEdition;
 
 import Utilities.*;
-import Rent.BookCopy;
-import Book.Book;
+import Model.Rent.BookCopy;
+import Model.Book.Book;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -129,7 +129,7 @@ public abstract class BookEdition extends ObjectPlus implements Serializable {
 
     @Override
     public String toString() {
-        return "BookEdition{" +
+        return "Model.BookEdition{" +
                 "bookCopies=" + bookCopies +
                 ", dateOfPublishing=" + dateOfPublishing +
                 ", isbn13=" + isbn13 +

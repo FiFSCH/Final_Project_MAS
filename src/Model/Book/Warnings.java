@@ -1,4 +1,4 @@
-package Book;
+package Model.Book;
 
 public enum Warnings {
     BAD_LANGUAGE,

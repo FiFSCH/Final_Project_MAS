@@ -1,10 +1,10 @@
-import BookEdition.BookEdition;
-import BookEdition.ISBN13;
+import Model.Book.*;
+import Model.BookEdition.*;
 import GUI.Controller.MainController;
-import Person.*;
-import Book.*;
-import BookEdition.*;
-import Rent.*;
+import Model.Person.Person;
+import Model.Person.PersonType;
+import Model.Rent.BookCopy;
+import Model.Rent.Rent;
 import Utilities.ObjectPlus;
 
 import javax.swing.*;
