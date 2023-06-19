@@ -10,7 +10,7 @@ public class RentsListCellRenderer extends JLabel implements ListCellRenderer<Re
     @Override
     public Component getListCellRendererComponent(JList<? extends Rent> list, Rent value, int index, boolean isSelected, boolean cellHasFocus) {
         setOpaque(true);
-        String bookTitle = value.getBookCopy().getBookEdition().getBook().getTitle();
+        String bookTitle = (value.getBookCopy() == null ? null : value.getBookCopy().getBookEdition().getBook().getTitle());
         setText(bookTitle);
         if (isSelected) {
             setBackground(list.getSelectionBackground());

@@ -8,10 +8,7 @@ import Model.Rent.Rent;
 import Utilities.ObjectPlus;
 
 import javax.swing.*;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.EnumSet;
@@ -20,7 +17,8 @@ import java.util.EnumSet;
 public class Main {
     public static void main(String[] args) throws Exception {
         ISBN13.writeCodesAndCountriesIntoMap();
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("Extents.txt"))) {
+        File extents = new File("Extents.txt");
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(extents))) {
             ObjectPlus.loadExtents(ois);
         }
         //Sample data
@@ -66,8 +64,12 @@ public class Main {
             }
             mainController.displayGUI();
         });
-        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Extents.txt"))){
-            ObjectPlus.saveExtents(oos);
-        }
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("Extents.txt"))) {
+                ObjectPlus.saveExtents(oos);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }));
     }
 }

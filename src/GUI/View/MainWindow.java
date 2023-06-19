@@ -14,6 +14,7 @@ public class MainWindow extends JFrame {
         menuItem = new JMenuItem("Display Clients");
         jmenu.add(menuItem);
         setJMenuBar(menuBar);
+        setLocationRelativeTo(null);
     }
 
     public JMenuItem getMenuItem() {

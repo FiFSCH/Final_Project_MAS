@@ -25,7 +25,7 @@ public class ObjectPlus implements Serializable {
             throw new IllegalArgumentException("No such extent!");
         List<ObjectPlus> extent = allExtents.get(this.getClass());
         if(!extent.contains(this))
-            throw new IllegalArgumentException("this object is not in the extent!");
+           return;
         extent.remove(this);
     }
 

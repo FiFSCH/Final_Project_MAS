@@ -1,18 +1,20 @@
 package Model.Rent;
 
 import Model.Person.Person;
+import Utilities.ObjectPlus;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Comparator;
 
-public class Rent implements Serializable {
+public class Rent extends ObjectPlus implements Serializable {
     LocalDate dateStart, dateEnd;
     private BookCopy bookCopy;
     private Person client;
     private static final int baseRentPeriod = 30;
 
     public Rent(LocalDate dateStart, BookCopy bookCopy, Person client) throws IllegalAccessException {
+        super();
         setBookCopy(bookCopy);
         setClient(client);
         setDateStart(dateStart);
@@ -89,7 +91,8 @@ public class Rent implements Serializable {
                 '}';
     }
 
-    public void remove() throws IllegalAccessException {
+    public void removeRent() {
+        this.removeFromExtent();
         if (this.client == null)
             return;
         this.client.removeRentedBook(this);

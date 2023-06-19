@@ -214,15 +214,15 @@ public class Person extends ObjectPlus implements Serializable {
         bookCopy.addClient(this);
     }
 
-    public void removeRentedBook(Rent bookCopy) throws IllegalAccessException {
+    public void removeRentedBook(Rent bookCopy) {
         if (!personTypes.contains(PersonType.CLIENT))
-            throw new IllegalAccessException("This person is not a client!");
+            throw new IllegalArgumentException("This person is not a client!");
         if (bookCopy == null)
             throw new IllegalArgumentException("Empty relation!");
         if (!rentedBooks.contains(bookCopy))
             return;
         this.rentedBooks.remove(bookCopy);
-        bookCopy.remove();
+        bookCopy.removeRent();
     }
 
     public Rent rentBook(BookCopy book, LocalDate dateStart) throws IllegalAccessException {

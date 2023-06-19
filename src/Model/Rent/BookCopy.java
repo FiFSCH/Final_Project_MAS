@@ -70,13 +70,13 @@ public class BookCopy implements Serializable {
         client.addBookCopy(this);
     }
 
-    public void removeRentedBy(Rent client) throws IllegalAccessException {
+    public void removeRentedBy(Rent client) {
         if (client == null)
             throw new IllegalArgumentException("Empty object!");
         if (!this.rentedBy.contains(client))
             return;
         this.rentedBy.remove(client);
-        client.remove();
+        client.removeRent();
     }
 
     public Rent rentBook(Person client, LocalDate dateStart) throws IllegalAccessException {
