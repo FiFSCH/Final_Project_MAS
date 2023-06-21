@@ -15,9 +15,16 @@ import java.util.Map;
  */
 
 public class ISBN13 extends ObjectPlus implements Serializable {
-    //I assumed that books will use the ISBN 13 because it is a standard since 2007
+    //Books use the ISBN 13 because it is a standard since 2007
+
+    /**
+     * Map of countries and their pre-assigned codes used for validation of country code part of ISBN13.
+     * */
     private static final Map<Integer, String> codesAndCountriesMap = new HashMap<>();
     private static final File codesAndCountriesFile = new File("country_code.csv");
+    /**
+     * This prefix is the common part of the ISBNs.
+     * */
     private static final int prefix = 978;
     private int countryCode, checkSum;
     private String publisherCode, publicationNumber; //Not int because of the possible leading zeros
@@ -107,6 +114,9 @@ public class ISBN13 extends ObjectPlus implements Serializable {
         this.checkSum = checksum;
     }
 
+    /**
+     * Reading countries and codes from the file into a map.
+     * */
     public static void writeCodesAndCountriesIntoMap() {
         try (BufferedReader br = new BufferedReader(new FileReader(codesAndCountriesFile))) {
             Integer code;

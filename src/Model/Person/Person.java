@@ -10,14 +10,20 @@ import java.time.Period;
 import java.util.*;
 
 public class Person extends ObjectPlus implements Serializable {
-
-    private String firstName, lastname, email;
+    /**
+     * Implementation of class Person, it includes dynamic and overlapping inheritance of classes Client and Author.
+     * Inheritance was implemented using structure flattening.
+     * */
+    private String firstName, lastname, email; //Email is optional
     private LocalDate dateOfBirth;
+    /**
+     * Discriminator holding the values indicating type of a person.
+     * */
     private EnumSet<PersonType> personTypes;
 
     //author
     private Set<Book> books = new HashSet<>();
-    private String pseudonym;
+    private String pseudonym; //optional
 
     //client
     private static final int minimalRequiredAge = 14;
@@ -32,6 +38,7 @@ public class Person extends ObjectPlus implements Serializable {
         setDateOfBirth(dateOfBirth);
         setPersonTypes(personTypes);
 
+        //Validation of roles
         if (personTypes.contains(PersonType.AUTHOR)) {
             books = new HashSet<>();
             setPseudonym(pseudonym);
@@ -88,7 +95,7 @@ public class Person extends ObjectPlus implements Serializable {
     }
     //endregion
 
-    //region Model.Person getters and setters
+    //region Person getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -117,8 +124,9 @@ public class Person extends ObjectPlus implements Serializable {
         return email;
     }
 
+
     public void setEmail(String email) {
-        if(email == null){
+        if(email == null){ //email is optional.
             this.email = null;
             return;
         }
@@ -154,7 +162,7 @@ public class Person extends ObjectPlus implements Serializable {
     public void setPseudonym(String pseudonym) throws IllegalAccessException {
         if (!personTypes.contains(PersonType.AUTHOR))
             throw new IllegalAccessException("This person is not an author!");
-        if (pseudonym == null) {
+        if (pseudonym == null) { //pseudonym is optional
             this.pseudonym = null;
             return;
         }
@@ -250,7 +258,7 @@ public class Person extends ObjectPlus implements Serializable {
         this.memberTo = memberTo;
     }
 
-    public int getAge() throws IllegalAccessException {
+    public int getAge() throws IllegalAccessException { //derived attribute
         if (!personTypes.contains(PersonType.CLIENT))
             throw new IllegalAccessException("This person is not a client!");
         return Period.between(this.getDateOfBirth(), LocalDate.now()).getYears();

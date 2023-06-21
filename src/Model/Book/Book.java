@@ -11,20 +11,28 @@ import java.util.HashSet;
 import java.util.Set;
 
 public abstract class Book extends ObjectPlus implements Serializable {
+    /**
+     * Abstract superclass for disjoint inheritance of book genre aspect.
+     * "Target audience" aspect of the multi-aspect inheritance was flattened and moved to this class.
+     */
     private String title;
+    /**
+     * Discriminator for targetAudience aspect of multi-aspect inheritance.
+     */
     private TargetAudience targetAudience;
     private Set<Person> authors = new HashSet<>();
 
-    //Model.Book for children
+    //Book for children
     private ChildStage childStage;
     private Boolean isRequiredReading; //Boolean object because this attribute is optional.
-    //Model.Book for adults
+    //Book for adults
     private EnumSet<Warnings> warnings;
 
     public Book(String title, TargetAudience targetAudience, ChildStage childStage, Boolean isRequiredReading, EnumSet<Warnings> warnings) throws IllegalAccessException {
         super();
         setTitle(title);
         setTargetAudience(targetAudience);
+        //Validation of target audience aspect
         if (targetAudience == TargetAudience.CHILD_BOOK) {
             setChildStage(childStage);
             setRequiredReading(isRequiredReading);
@@ -49,6 +57,9 @@ public abstract class Book extends ObjectPlus implements Serializable {
         return targetAudience;
     }
 
+    /**
+     * Target audience of the book cannot be changed.
+     */
     private void setTargetAudience(TargetAudience targetAudience) {
         if (targetAudience == null)
             throw new IllegalArgumentException("Empty target audience!");
@@ -76,6 +87,9 @@ public abstract class Book extends ObjectPlus implements Serializable {
     public void setRequiredReading(Boolean requiredReading) throws IllegalAccessException {
         if (this.targetAudience != TargetAudience.CHILD_BOOK)
             throw new IllegalAccessException("This book is not for children!");
+        if (requiredReading == null)
+            throw new IllegalArgumentException("Null value for required reading!");
+        //nulls are only allowed during object's creation in case a book is targeted into adults.
         isRequiredReading = requiredReading;
     }
 

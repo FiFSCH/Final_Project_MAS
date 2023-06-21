@@ -7,6 +7,10 @@ import java.io.Serializable;
 import java.util.*;
 
 public class ObjectPlus implements Serializable {
+
+    /**
+     * Utility class responsible for persistence and extent handling.
+     * */
     private static Map<Class, List<ObjectPlus>> allExtents = new HashMap<>();
 
     public ObjectPlus() {

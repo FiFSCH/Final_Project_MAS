@@ -51,6 +51,9 @@ public class ClientDetailsWindowController {
         return clientDetailsWindow;
     }
 
+    /**
+     * Method responsible for obtaining and setting details of the client and list of their rents.
+     * */
     public void clientDetails(Person client) {
         if (client == null) //To avoid possible null passing
             return;

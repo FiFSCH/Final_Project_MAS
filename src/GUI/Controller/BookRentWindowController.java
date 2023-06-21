@@ -67,7 +67,7 @@ public class BookRentWindowController {
             int choice = JOptionPane.showConfirmDialog(null, "Are you sure?", "Cancel reservation", JOptionPane.YES_NO_OPTION);
             if (choice == 0) { //choice == 0 - means that the user pressed Yes.
                 rent.removeRent();
-                JOptionPane.showMessageDialog(null, "Rent successfully cancelled.", "Rent cancellation - success", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Reservation successfully cancelled.", "Reservation cancellation - success", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 

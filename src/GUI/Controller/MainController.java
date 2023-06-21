@@ -40,7 +40,7 @@ public class MainController {
     }
 
     /**
-     * Method responsible for displaying list of clients (Objects of class person with Client role assigned to them)
+     * Method responsible for displaying a list of clients (Objects of class person with Client role assigned to them)
      * 1. Clear selection is done in order to unselect previously selected client from the list,
      *    in order to be able to freely select any client from the list after coming back to it from other view.
      * 2. getContentPane() is responsible for obtaining the content layer from the frame. All objects are displayed on it.
@@ -60,6 +60,18 @@ public class MainController {
         mainWindowView.getContentPane().repaint();
     }
 
+    /**
+     * Method responsible for displaying a client's details and their rents.
+     * 1. clientDetails() is used in order to obtain and set the details of client, including their rents list.
+     * 2. getContentPane() is responsible for obtaining the content layer from the frame. All objects are displayed on it.
+     * 3. getContentPane().removeALl() - removes all objects from the content layer of the frame.
+     *     It is done in order to be sure that the view will not hold any elements coming from the previous views.
+     * 4. getContentPane().add()
+     *    Adds the panel containing client's details and list of rents into the content pane of the main window
+     * 5. revalidate() is used to trigger the layout accommodation process in order to adjust the UI to the changes.
+     * 6. repaint() is used in order to force refreshing the component on the screen,
+     *     to make sure that its visual representation will reflect all the changes made in view.
+     */
     public void displayClientDetails(Person client) {
         clientDetailsWindowController.clientDetails(client);
         mainWindowView.getContentPane().removeAll();
@@ -68,6 +80,18 @@ public class MainController {
         mainWindowView.getContentPane().repaint();
     }
 
+    /**
+     * Method responsible for displaying details of the rent and rented book.
+     * 1. getBookAndRentDetails() is used in order to obtain and set the details of the rent and rented book.
+     * 2. getContentPane() is responsible for obtaining the content layer from the frame. All objects are displayed on it.
+     * 3. getContentPane().removeALl() - removes all objects from the content layer of the frame.
+     *     It is done in order to be sure that the view will not hold any elements coming from the previous views.
+     * 4. getContentPane().add()
+     *    Adds the panel containing the data about rent and book into the content pane of the main window
+     * 5. revalidate() is used to trigger the layout accommodation process in order to adjust the UI to the changes.
+     * 6. repaint() is used in order to force refreshing the component on the screen,
+     *     to make sure that its visual representation will reflect all the changes made in view.
+     */
     public void displayBookRentDetails(Rent rent) {
         bookRentWindowController.getBookAndRentDetails(rent);
         mainWindowView.getContentPane().removeAll();

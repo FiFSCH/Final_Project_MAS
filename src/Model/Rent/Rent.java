@@ -8,7 +8,11 @@ import java.time.LocalDate;
 import java.util.Comparator;
 
 public class Rent extends ObjectPlus implements Serializable {
-    LocalDate dateStart, dateEnd;
+    /**
+     * Association table between Person (client) and bookCopy.
+     * This is a bag association, thus no validation of repetitions.
+     * */
+    private LocalDate dateStart, dateEnd;
     private BookCopy bookCopy;
     private Person client;
     private static final int baseRentPeriod = 30;

@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="added rent removal + fixed persistence bug">
+    <list default="true" id="01aff1c3-73e7-4f38-8982-ecc16165539f" name="Changes" comment="Added some javaDocs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Extents.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Controller/BookRentWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/BookRentWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientDetailsWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Controller/ClientsWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/ClientsWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/BookRentDetailsWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientDetailsWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ClientsListWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/AuthorsListCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/AuthorsListCellRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/ClientsListCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/ClientsListCellRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/RentsListCellRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/ListCellRenderers/RentsListCellRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/View/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/BookEdition/BookEdition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/BookEdition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/BookEdition/ISBN13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BookEdition/ISBN13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Rent/BookCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Rent/BookCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Rent/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Rent/Rent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utilities/ObjectPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilities/ObjectPlus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,7 @@
       <workItem from="1687185162882" duration="8816000" />
       <workItem from="1687206268934" duration="11564000" />
       <workItem from="1687297729867" duration="1136000" />
-      <workItem from="1687348336104" duration="11836000" />
+      <workItem from="1687348336104" duration="16841000" />
     </task>
     <task id="LOCAL-00001" summary="added some more associations + unique ISBN constraint">
       <created>1686954866086</created>
@@ -175,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687218879660</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added some javaDocs">
+      <created>1687363338616</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687363338616</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +209,7 @@
     <MESSAGE value="fixed selection problem" />
     <MESSAGE value="moved to packages and fixed the isAfter bug" />
     <MESSAGE value="added rent removal + fixed persistence bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="added rent removal + fixed persistence bug" />
+    <MESSAGE value="Added some javaDocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some javaDocs" />
   </component>
 </project>

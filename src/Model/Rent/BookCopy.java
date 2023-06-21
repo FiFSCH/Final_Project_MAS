@@ -11,13 +11,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class BookCopy implements Serializable {
+    /**
+     * "Part" element of composition between BookCopy and BookEdition.
+     * Also, one side of an association with an attribute between bookCopy and rent (through association table Rent)
+     * */
     private double price;
     private BookEdition bookEdition;
 
 
     private BookCopy(double price, BookEdition bookEdition) {
         setPrice(price);
-        this.bookEdition = bookEdition;
+        this.bookEdition = bookEdition; //validated by the method "createBookCopy"
     }
 
     public static BookCopy createBookCopy(BookEdition bookEdition, double price) throws SharedObjectException {
@@ -47,7 +51,7 @@ public class BookCopy implements Serializable {
     }
 
     public void setPrice(double price) {
-        if (price <= 0)
+        if (price < 0)
             throw new IllegalArgumentException("Too low price!");
         this.price = price;
     }

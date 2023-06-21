@@ -10,10 +10,21 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Abstract super class for inheriting edition types.
+ * This class is also a "Whole" part of the composition between BookEdition and BookCopy
+ */
 public abstract class BookEdition extends ObjectPlus implements Serializable {
+
+    /**
+     * Global list of book copies used for validation of "no-sharing" condition of composition.
+     */
     private static Set<BookCopy> allBookCopies = new HashSet<>();
     private Set<BookCopy> bookCopies = new HashSet<>();
     private LocalDate dateOfPublishing;
+    /**
+     * Complex attribute.
+     */
     private ISBN13 isbn13;
     private String language;
 
@@ -43,6 +54,7 @@ public abstract class BookEdition extends ObjectPlus implements Serializable {
     public void setIsbn13(ISBN13 isbn13) throws Exception {
         if (isbn13 == null)
             throw new IllegalArgumentException("Empty ISBN!");
+        //Unique constraint of ISBN validation
         for (ObjectPlus edition : ObjectPlus.getExtent(this.getClass())) {
             if (((BookEdition) edition).isbn13 == isbn13)
                 throw new Exception("ISBN13 must be unique!");
@@ -116,6 +128,8 @@ public abstract class BookEdition extends ObjectPlus implements Serializable {
     }
 
     public void removeBook(Book book) throws IllegalAccessException {
+        if (book == null)
+            throw new IllegalArgumentException("Empty book!");
         if (this.book == null)
             return;
         if (this.book != book)
